@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soya ya Kwetu - Healthy Food, Made in Congo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fdfaf6; /* Light cream background */
+            color: #333;
+        }
+        .section-heading {
+            position: relative;
+            display: inline-block;
+            padding-bottom: 0.5rem;
+            margin-bottom: 2rem;
+            font-weight: 700;
+            color: #2c523e; /* Dark green */
+        }
+        .section-heading::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50%;
+            height: 4px;
+            background-color: #a7d129; /* Soya green */
+            border-radius: 9999px;
+        }
+        .btn-primary {
+            background-color: #a7d129; /* Soya green */
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #8cb821; /* Darker soya green */
+        }
+        .card {
+            background-color: white;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <header class="bg-white shadow-sm py-4 px-6 md:px-12 fixed w-full z-50">
+        <nav class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-3xl font-extrabold text-[#2c523e] tracking-tight">
+                SOYA YA <span class="text-[#a7d129]">KWETU</span>
+            </a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="text-gray-700 hover:text-[#a7d129] font-medium transition duration-300">Home</a>
+                <a href="#about" class="text-gray-700 hover:text-[#a7d129] font-medium transition duration-300">About Us</a>
+                <a href="#products" class="text-gray-700 hover:text-[#a7d129] font-medium transition duration-300">Products</a>
+                <a href="#impact" class="text-gray-700 hover:text-[#a7d129] font-medium transition duration-300">Our Impact</a>
+                <a href="#contact" class="text-gray-700 hover:text-[#a7d129] font-medium transition duration-300">Contact</a>
+            </div>
+            <button class="md:hidden text-gray-700 focus:outline-none" id="mobile-menu-button">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </nav>
+        <div class="md:hidden hidden bg-white py-4" id="mobile-menu">
+            <a href="#home" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 transition duration-300">Home</a>
+            <a href="#about" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 transition duration-300">About Us</a>
+            <a href="#products" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 transition duration-300">Products</a>
+            <a href="#impact" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 transition duration-300">Our Impact</a>
+            <a href="#contact" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 transition duration-300">Contact</a>
+        </div>
+    </header>
+
+    <section id="home" class="relative bg-gradient-to-r from-[#2c523e] to-[#a7d129] text-white py-32 md:py-48 flex items-center justify-center min-h-screen-75 bg-[url('back.jpeg')] bg-cover bg-center bg-no-repeat">
+        <div class="absolute inset-0 bg-black bg-opacity-30 pointer-events-none"></div>
+        <div class="container mx-auto text-center px-6 relative z-10">
+            <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6 animate-fade-in-up">
+                Nourishing Lives, <br class="md:hidden">Naturally.
+            </h1>
+            <p class="text-xl md:text-2xl mb-10 opacity-90 animate-fade-in-up delay-200">
+                The symbol of healthy food, easily accessible and made in Congo.
+            </p>
+            <a href="#products" class="btn-primary inline-block text-lg md:text-xl animate-fade-in-up delay-400">
+                Explore Our Products
+            </a>
+        </div>
+    </section>
+
+    <section id="about" class="py-16 md:py-24 bg-[#fdfaf6] px-6">
+        <div class="container mx-auto">
+            <h2 class="section-heading text-4xl mb-12 text-center">About Soya ya Kwetu</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <p class="text-lg leading-relaxed text-gray-700">
+                        At Soya ya Kwetu, we are deeply rooted in the agri-food sector, committed to transforming lives through healthy and affordable nutrition. Our journey begins in the fertile lands of Kolwezi, specifically Musonoi and Mutoshi, where we cultivate premium soya beans.
+                    </p>
+                    <p class="text-lg leading-relaxed text-gray-700">
+                        These beans are then meticulously processed into high-quality soya powder at our small mealing factory in Gecamine. Our product stands as a superior alternative to traditional milk powder, offering numerous health benefits—it's heart-friendly, rich in essential vitamins, and entirely 100% bio.
+                    </p>
+                    <p class="text-lg leading-relaxed text-gray-700">
+                        Starting in Kolwezi, our ambition is to expand across the entire Democratic Republic of Congo, providing a vital solution to the prevalent scarcity and high cost of milk, while championing a healthier, natural dietary option for all.
+                    </p>
+                </div>
+                <div class="flex justify-center items-center">
+                    <img src="back.jpeg" alt="Soya Field" class="rounded-xl shadow-lg w-full max-w-md md:max-w-none">
+                </div>
+            </div>
+
+            <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="card">
+                    <h3 class="text-2xl font-semibold text-[#2c523e] mb-4">Our Vision</h3>
+                    <p class="text-gray-700">
+                        To become the leading distributional channel of soya within the DRC, actively fighting child malnutrition and promoting public health. We aspire to be the symbol of healthy, accessible food, proudly made in Congo, transforming national nutrition sustainably within the next 8 years.
+                    </p>
+                </div>
+                <div class="card">
+                    <h3 class="text-2xl font-semibold text-[#2c523e] mb-4">Our Mission</h3>
+                    <p class="text-gray-700">
+                        To provide healthy, energetic, and lactose-free food to the population of DRC, emphasizing nutritionally rich soya-based alternatives. Our objective is to significantly reduce child malnutrition in neglected areas and offer a miraculous bio-food solution made in DR Congo.
+                    </p>
+                </div>
+                <div class="card">
+                    <h3 class="text-2xl font-semibold text-[#2c523e] mb-4">Core Values</h3>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>Every human being has the right to healthy food.</li>
+                        <li>We value our employees and encourage collaboration.</li>
+                        <li>We respect and trust our clients.</li>
+                        <li>Our soya is 100% bio; no chemical products used.</li>
+                        <li>All equipment used is locally sourced within Congo.</li>
+                        <li>Our workforce is 100% Congolese.</li>
+                        <li>Timely delivery with respect to customer requirements.</li>
+                        <li>Crucial collaboration with the local Kolwezi community.</li>
+                        <li>Our production process is free from air pollution.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="problem" class="py-16 md:py-24 bg-gray-50 px-6">
+        <div class="container mx-auto">
+            <h2 class="section-heading text-4xl mb-12 text-center">The Problem We Are Solving</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-semibold text-[#2c523e]">Addressing Malnutrition in DRC</h3>
+                    <p class="text-lg leading-relaxed text-gray-700">
+                        The Democratic Republic of Congo faces significant challenges with malnutrition, particularly in central provinces where access to affordable, nutritious food is limited. Statistics show that over 48% of Congolese children suffer from malnutrition, largely due to the high cost and inaccessibility of powdered milk.
+                    </p>
+                    <p class="text-lg leading-relaxed text-gray-700">
+                        Our solution harnesses the potential of Congo's own soil, utilizing soya—a highly energetic and cost-effective alternative to imported cow's milk. Soya ya Kwetu offers a natural, sustainable, and economically viable option to combat this critical issue.
+                    </p>
+                    <h3 class="text-2xl font-semibold text-[#2c523e] mt-8">Beyond Malnutrition: Health & Accessibility</h3>
+                    <p class="text-lg leading-relaxed text-gray-700">
+                        For those who can afford milk, concerns about lactose, cholesterol, and the need for diverse health benefits persist. Soya ya Kwetu provides a miraculous solution: it's naturally free from lactose and cholesterol, packed with health advantages, and serves as an effective food complement for overall well-being.
+                    </p>
+                    <p class="text-lg leading-relaxed text-gray-700">
+                        Furthermore, in regions like Eastern DRC (Goma and Bukavu) affected by conflict, food access is a constant struggle. Soya, being easy to prepare and stock, offers a crucial source of energy and nourishment for vulnerable populations, including prisoners where nutritional situations are often dire.
+                    </p>
+                </div>
+                <div class="flex justify-center items-center">
+                    <img src="https://placehold.co/600x400/a7d129/2c523e?text=Community+Impact" alt="Community Impact" class="rounded-xl shadow-lg w-full max-w-md md:max-w-none">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="py-16 md:py-24 bg-[#fdfaf6] px-6">
+        <div class="container mx-auto">
+            <h2 class="section-heading text-4xl mb-12 text-center">Our Products</h2>
+            <p class="text-center text-lg mb-12 text-gray-700 max-w-3xl mx-auto">
+                Soya ya Kwetu offers premium organic soya powder in convenient, eco-friendly packaging, designed to be accessible for every household.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="card text-center">
+                    <img src="https://placehold.co/300x400/d7e7c7/2c523e?text=SOYA+YA+KWETU%0A100g" alt="100g Soya Powder" class="mx-auto mb-6 rounded-lg w-full max-w-[250px]">
+                    <h3 class="text-2xl font-semibold text-[#2c523e] mb-2">100g Organic Soya Powder</h3>
+                    <p class="text-gray-600 mb-4">Perfect for individual use or trial.</p>
+                    <p class="text-3xl font-bold text-[#a7d129]">10,000 CDF</p>
+                    <p class="text-sm text-gray-500 mt-2">Recyclable Packaging</p>
+                </div>
+                <div class="card text-center">
+                    <img src="https://placehold.co/300x400/c2e0b1/2c523e?text=SOYA+YA+KWETU%0A200g" alt="200g Soya Powder" class="mx-auto mb-6 rounded-lg w-full max-w-[250px]">
+                    <h3 class="text-2xl font-semibold text-[#2c523e] mb-2">200g Organic Soya Powder</h3>
+                    <p class="text-gray-600 mb-4">Ideal for small families and regular use.</p>
+                    <p class="text-3xl font-bold text-[#a7d129]">18,000 CDF</p>
+                    <p class="text-sm text-gray-500 mt-2">Recyclable Paper Packaging</p>
+                </div>
+                <div class="card text-center">
+                    <img src="https://placehold.co/300x400/a7d129/2c523e?text=SOYA+YA+KWETU%0A500g" alt="500g Soya Powder" class="mx-auto mb-6 rounded-lg w-full max-w-[250px]">
+                    <h3 class="text-2xl font-semibold text-[#2c523e] mb-2">500g Organic Soya Powder</h3>
+                    <p class="text-gray-600 mb-4">Economical choice for larger families or bulk buyers.</p>
+                    <p class="text-3xl font-bold text-[#a7d129]">40,000 CDF</p>
+                    <p class="text-sm text-gray-500 mt-2">Recyclable Paper Packaging</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="target-market" class="py-16 md:py-24 bg-gray-50 px-6">
+        <div class="container mx-auto">
+            <h2 class="section-heading text-4xl mb-12 text-center">Who We Serve</h2>
+            <p class="text-center text-lg mb-12 text-gray-700 max-w-3xl mx-auto">
+                Soya ya Kwetu is dedicated to reaching diverse segments of the population, ensuring healthy nutrition is accessible to all.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card">
+                    <h3 class="text-xl font-semibold text-[#2c523e] mb-3">Supermarkets & Families</h3>
+                    <p class="text-gray-700">
+                        We supply major supermarkets like Kin-Market, Katanga Supermarket, and Jambo Market with our packaged soya powder (100g, 200g, 500g), catering to families who prioritize healthy food.
+                    </p>
+                </div>
+                <div class="card">
+                    <h3 class="text-xl font-semibold text-[#2c523e] mb-3">Big Organizations</h3>
+                    <p class="text-gray-700">
+                        Partnering with organizations such as PAM, UNESCO, and USAID to support their humanitarian efforts and provide nutritious food where it's needed most.
+                    </p>
+                </div>
+                <div class="card">
+                    <h3 class="text-xl font-semibold text-[#2c523e] mb-3">Low-Scale Traders</h3>
+                    <p class="text-gray-700">
+                        Empowering local entrepreneurs by offering bulk quantities (minimum 5 sacks of 100kg each) for resale in smaller shops and communities.
+                    </p>
+                </div>
+                <div class="card">
+                    <h3 class="text-xl font-semibold text-[#2c523e] mb-3">High School Students</h3>
+                    <p class="text-gray-700">
+                        Making our products available for daily consumption through supermarkets and low-scale traders, ensuring students have access to a healthy tea complement.
+                    </p>
+                </div>
+                <div class="card">
+                    <h3 class="text-xl font-semibold text-[#2c523e] mb-3">Congolese Government</h3>
+                    <p class="text-gray-700">
+                        Seeking partnerships with correctional facilities to provide prisoners with affordable, highly nutritious soya, improving their overall health and well-being.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="impact" class="py-16 md:py-24 bg-[#fdfaf6] px-6">
+        <div class="container mx-auto">
+            <h2 class="section-heading text-4xl mb-12 text-center">Our Impact & Goals</h2>
+            <p class="text-center text-lg mb-12 text-gray-700 max-w-3xl mx-auto">
+                Soya ya Kwetu is driven by ambitious SMART goals, aiming for sustainable growth and significant positive impact across the DRC.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="card">
+                    <h3 class="text-2xl font-semibold text-[#2c523e] mb-4">Short-Term Goals</h3>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>Produce 100 kg of soya monthly from Musonoi farm (Feb 1 - June 1).</li>
+                        <li>Sell 1,000 packages of soya powder in Katanga Supermarket, Kolwezi within one month:
+                            <ul class="list-circle list-inside ml-4">
+                                <li>300 x 100g packages (10,000 CDF unit price)</li>
+                                <li>300 x 200g packages (18,000 CDF unit price)</li>
+                                <li>400 x 500g packages (40,000 CDF unit price)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3 class="text-2xl font-semibold text-[#2c523e] mb-4">Medium-Term Goals</h3>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>Expand soya business to Lubumbashi and Kalemi for partnership with Kin-Market by January 2027.</li>
+                        <li>Produce 800 kg of soya monthly from Musonoi and Mutshatsha farms (Feb 1 - June 1, 2026).</li>
+                        <li>Sell 14,000 packages of soya powder in Kolwezi and Lubumbashi within a year (2028):
+                            <ul class="list-circle list-inside ml-4">
+                                <li>3,500 x 100g packages</li>
+                                <li>3,500 x 200g packages</li>
+                                <li>6,500 x 500g packages</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3 class="text-2xl font-semibold text-[#2c523e] mb-4">Long-Term Goals</h3>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>Establish 4 new soya fields (at least 20 hectares each) in Kinshasa, Lubumbashi, Bukavu, Goma, and Kisangani by end of 2030.</li>
+                        <li>Sign partnership with Congolese government to be 20% soya provider for central prisons in Kinshasa, Kolwezi, Lubumbashi, Goma, and Bukavu by end of December 2030.</li>
+                        <li>Reintegrate 20 prisoners from Kolwezi into life after prison by offering jobs in Musonoi and Mutoshi soya fields (December 2030).</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-16 md:py-24 bg-gray-100 px-6">
+        <div class="container mx-auto text-center">
+            <h2 class="section-heading text-4xl mb-12">Get in Touch</h2>
+            <p class="text-lg text-gray-700 mb-8 max-w-2xl mx-auto">
+                We'd love to hear from you! Whether you're a potential partner, customer, or simply want to learn more about Soya ya Kwetu, feel free to reach out.
+            </p>
+            <div class="flex flex-col items-center space-y-6">
+                <p class="text-xl font-semibold text-[#2c523e]">Email: <a href="mailto:info@soyayakwetu.com" class="text-[#a7d129] hover:underline">soyayakwetu@gmail.com</a></p>
+                <p class="text-xl font-semibold text-[#2c523e]">Phone: <a href="tel:+243000000000" class="text-[#a7d129] hover:underline">+243 819 054 815</a></p>
+                <p class="text-xl font-semibold text-[#2c523e]">Location: Kolwezi, DR Congo</p>
+                <p class="text-lg text-gray-600">Kamoa Centre of Excellence</p>
+                <p class="text-lg text-gray-600">May 21, 2025</p>
+            </div>
+            <div class="mt-12 max-w-xl mx-auto bg-white p-8 rounded-xl shadow-lg">
+                <h3 class="text-2xl font-semibold text-[#2c523e] mb-6">Send Us a Message</h3>
+                <form class="space-y-4">
+                    <div>
+                        <input type="text" placeholder="Your Name" class="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#a7d129] focus:border-transparent" required>
+                    </div>
+                    <div>
+                        <input type="email" placeholder="Your Email" class="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#a7d129] focus:border-transparent" required>
+                    </div>
+                    <div>
+                        <textarea placeholder="Your Message" rows="5" class="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#a7d129] focus:border-transparent" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary w-full">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[#2c523e] text-white py-8 px-6">
+        <div class="container mx-auto text-center">
+            <p class="mb-4">&copy; 2025 Soya ya Kwetu. All rights reserved.</p>
+            <div class="flex justify-center space-x-6">
+                <a href="#" class="text-white hover:text-[#a7d129] transition duration-300">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.83 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.165-1.11-1.478-1.11-1.478-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.529 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.93 0-1.09.39-1.984 1.029-2.685-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.701.115 2.502.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.099 2.65.64.701 1.029 1.595 1.029 2.685 0 3.822-2.339 4.673-4.566 4.92.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2Z" clip-rule="evenodd" />
+                    </svg>
+                </a>
+                <a href="#" class="text-white hover:text-[#a7d129] transition duration-300">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.073 4.073 0 01.8 10.152v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.188a11.644 11.644 0 006.29 1.843" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+
+                // Close mobile menu after clicking a link
+                const mobileMenu = document.getElementById('mobile-menu');
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
